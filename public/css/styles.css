@@ -9,7 +9,7 @@ p, ul, ol, li { font-family: var(--bodyFonts); }
 .ebody { background-color: #FFF; }
 
 .custombg, .custombg2, .custombg3 { position: relative; color: #FFF; }
-.custombg:before, .custombg2:before { position: absolute; content: ""; top: 0; left: 0; width: 100%; z-index: -1; }
+.custombg:before, .custombg2:before { position: absolute; content: ""; top: 0; left: 0; width: 100%; z-index: -1; background-repeat: no-repeat; background-size: cover; }
 .custombg:before { height: 1000px; background-image: url('../images/lp1-banner-bg.jpeg'); background-position: center right; }
 .custombg2:before { height: 1429px; background-image: url('../images/lp2-banner-bg.jpeg'); background-position: 60% center; }
 
@@ -108,7 +108,7 @@ footer { background-color: #FEFFFF; margin: 50px auto 20px; }
 	
 	.siteinfo { grid-template-columns: auto; }
 	.siteinfo.esSiteInfo { grid-template-columns: auto; }
-	.sicontent { border-radius: 0.65em 0.65em 0 0; padding: 25px 26px 22px; }
+	.sicontent, .siteinfo.esSiteInfo .sicontent { border-radius: 0.65em 0.65em 0 0; padding: 25px 26px 22px; }
 	.sibook { padding: 30px 32px; border-radius: 0 0 0.65em 0.65em; }
 	
 	.sibook h2 { font-family: var(--bodyFonts); font-size: 32px; line-height: 40px; margin: 40px 26px; }
@@ -122,12 +122,32 @@ footer { background-color: #FEFFFF; margin: 50px auto 20px; }
 	.logoNavMobile { display: block; }
 	.logoNav, .footerLogo { display: none; }
 	.topNav { padding-top: 10px; }
+	
+	.esNavContainer .topNav { display: flex !important; max-width: calc(100% - 52px); }
+	
+	
 	.custombg:before, .custombg2:before { height: 600px; }
 	
 	.custombg:before { background-image: url('../images/lp1-banner-bg-mobile.png'); background-position: center right; }
 	.custombg2:before { background-image: url('../images/lp2-banner-bg-mobile.png'); background-position: bottom right; }
+	.custombg3:before { background-image: url('../images/lp3-banner-bg-mobile.png'); left: 0; width: 100%; height: 584px; }
+	.topContentes h1 {
+		margin: 0 !important;
+		width: 86%;
+		font-size: 48px !important;
+		padding-top: 30px;
+		line-height: 50px;
+	}
+	.topContentes h2 {
+		margin: 24px 0 0 !important;
+		font-size: 24px;
+		line-height: 32px;
+		font-weight: 400;
+		width: 60%;
+		padding-bottom: 20px;
+	}
 	
-	
+	.topContentes .bacResp { margin-bottom: 120px; }
 	
 	.topContentsp h2  { font-size: 26px; width: 60%; }
 	 .topContentfr h2 { font-size: 26px; width: 78%; margin-bottom: 30px; }
