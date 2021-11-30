@@ -24,6 +24,7 @@ p, ul, ol, li { font-family: var(--bodyFonts); }
 	.topNav ul li:last-child, footer ul li:last-child { margin-left: 30px; }
 	.topNav ul li, footer ul li { display: inline-block; }
 	.topNav svg { fill:#FFF; }
+	.custombg2 .topNav svg { fill:var(--edgeBlue); }
 
 .logoNavMobile { display: none; }
 
