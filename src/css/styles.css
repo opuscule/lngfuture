@@ -82,7 +82,7 @@ p, ul, ol, li { font-family: var(--bodyFonts); }
 
 .calc-cont { -webkit-box-shadow: 0 20px 40px 0 rgba(0,30,96,0.2); box-shadow: 0 20px 40px 0 rgba(0,30,96,0.2); border-radius: 0.65em; background-color: #FFF; margin-bottom: 8rem; }
 .calc-display { padding: 4%; }
-	.calc-display h2 { color: #333; font-family: var(--titleFonts); font-size: 48px; line-height: 1.2; }
+	.calc-display h2 { color: #333; font-family: var(--titleFonts); font-size: 48px; line-height: 1.2; margin-top: 1rem; padding-top: 0; }
 
 
 
